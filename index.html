@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="logo">Sri Hari Naidu Gullipalli</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about" onclick="opentab('skills')">About</a></li>
+                <li><a href="#education" onclick="opentab('education')">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <button class="dark" id="darkModeToggle">🌙</button>
+            </ul>
+        </div>
+    </nav>
+    <nav class="ham-nav">
+        <div class="logo">Sri Hari Naidu Gullipalli</div>
+        <div class="ham-menu" >
+            <div class="ham-icon" onclick="ToggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="ham-links">
+                <li><a href="#about" onclick="ToggleMenu()">About</a></li>
+                <li><a href="#education" onclick="ToggleMenu()">Education</a></li>
+                <li><a href="#projects" onclick="ToggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="ToggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>  
+    <section class="profile">
+        <div class="profile-img"><img class='p-img' src="./images/WhatsApp Image 2025-01-06 at 11.43.33_9da55db0 (1).png" alt="My Profile-Pic"></div>
+        <div class="profile-details">
+            <div class="text">
+                <p class="p-g">Hello, I'm</p>
+                <h1>Sri Hari Naidu Gullipalli</h1>
+                <p class="p-t">Software Developer</p>
+            </div>
+            <div class="btn-container">
+                <button class="cv" onclick="window.open('./assets/SRIHARINAIDU_Resume.pdf')">Download Resume</button>
+                <button class="ci" onclick="location.href='#contact'">Contact Info</button>
+            </div>
+            <div class="btn-socials">
+                <button class="lin"><img class="lin-img" src="./images/linkedin.png" alt="My Linkedin profile" onclick="location.href='https://www.linkedin.com/in/srihari-gullipalli-a0ab31249/'"></button>
+                <button class="git"><img class="git-img" src="./images/github (1).png" alt="My Github Profile" onclick="location.href='https://github.com/'"></button>
+            </div>
+        </div>
+    </section>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1"><img src="./images/WhatsApp Image 2025-01-06 at 11.43.34_150dc58f.jpg"></div>
+                <div class="about-col-2">
+                    <h1 class="about-title">About Me</h1>
+                    <p class="about-summary">
+                        I am a passionate engineering student seeking opportunities to contribute my skills and grow as an engineer within a forward-thinking company.
+                        I am dedicated to continuously learning and adapting to new technologies, ensuring I stay at the forefront of industry trends and align my skills with market demands. With practical experience in software and web development,
+                        I am committed to building a successful career in engineering.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><Span>Programming Languages</Span><br>Python</li>
+                            <li><span>Front-End</span><br>HTML, CSS, JavaScript, Angular</li>
+                            <li><span>Back-End</span><br>Django</li>
+                            <li><span>Database</span><br>MySql, MongoDB</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2024</span><br>B.Tech from Gayatri Vidhya Parishad college of Engineering<br>
+                                 CGPA: 8.31</li>
+                            <li><span>2018-2020</span><br> Inter from Sasi Junior College <br>Percentage: 94</li>
+                            <li><span>2018</span><br>10th from Abhyudaya High School <br>CGPA: 9.8</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
